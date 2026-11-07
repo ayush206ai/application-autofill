@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Application Autofill</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<h1>Application Autofill</h1>
+<p>Save your profile, then preview matches on the current page.</p>
+<form id="profile">
+  <label>First name<input name="first"></label>
+  <label>Last name<input name="last"></label>
+  <label>Email<input name="email" type="email"></label>
+  <label>GitHub username<input name="github"></label>
+  <label>Project repository URL<input name="repo" type="url"></label>
+  <label>Portfolio URL<input name="portfolio" type="url"></label>
+  <label>Project summary<textarea name="summary" rows="3"></textarea></label>
+  <button type="submit">Save profile</button>
+</form>
+<hr>
+<button id="scan">Preview matches</button>
+<div id="results"></div>
+<button id="apply" hidden>Fill checked fields</button>
+<p id="status" role="status"></p>
+</main>
+<script type="module" src="popup.js"></script>
+</html>
